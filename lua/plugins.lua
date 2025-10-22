@@ -122,7 +122,7 @@ return {
 			{ "<leader>w", "<cmd>lua require('nvim-window').pick()<CR>", desc = "nvim-window Selection" },
 		},
 		config = function() require("config.nvim-window") end,
- 	},
+	},
 
 	{ "tpope/vim-unimpaired" },
 	{
@@ -149,6 +149,21 @@ return {
 		"echasnovski/mini.indentscope",
 		version = false,
 		config = function() require("config.mini-indentscope") end,
+	},
+
+	{
+		"lukoshkin/highlight-whitespace",
+		opts = {
+			tws = "\\s\\+$",
+			clear_on_bufleave = false,
+			palette = {
+				other = {
+					tws = 'gray',
+					['        '] = 'gray',
+					[' \\t'] = 'gray',
+				},
+			},
+		},
 	},
 
 	{

@@ -24,6 +24,7 @@ require('kanagawa').setup({
             ["CurSearch"] = { fg = "#000000", bg = "#febc08"},
             ["IncSearch"] = { fg = "#000000", bg = "#febc08"},
             ["Search"] = { fg = "#000000", bg = "#febc08"},
+            ["WinSeparator"] = { bg = "#000000", fg = "#febc08"},
         }
     end,
 })

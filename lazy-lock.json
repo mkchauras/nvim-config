@@ -9,6 +9,7 @@
   "gitee.nvim": { "branch": "master", "commit": "a7e02be455381de441f033bd7041896e9c9cdc78" },
   "glance.nvim": { "branch": "master", "commit": "3f8f02b401d9fbbac837fc69fba2457b03885aca" },
   "harpoon": { "branch": "harpoon2", "commit": "ed1f853847ffd04b2b61c314865665e1dadf22c7" },
+  "highlight-whitespace": { "branch": "master", "commit": "0af25bcfdd1e3132dc1795caf621bef9bc8ecd32" },
   "kanagawa.nvim": { "branch": "master", "commit": "debe91547d7fb1eef34ce26a5106f277fbfdd109" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "lspkind-nvim": { "branch": "master", "commit": "d79a1c3299ad0ef94e255d045bed9fa26025dab6" },

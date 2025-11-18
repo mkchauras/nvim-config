@@ -82,8 +82,8 @@ cmp.setup {
 			if cmp.visible() then
 				cmp.select_next_item(select_opts)
 			-- if the popup is not visible then open the popup
-			elseif has_words_before() then
-				cmp.complete()
+--			elseif has_words_before() then
+--				cmp.complete()
 			-- if it's a snippet then jump between fields
 			elseif luasnip.expand_or_jumpable() then
 				luasnip.expand_or_jump()

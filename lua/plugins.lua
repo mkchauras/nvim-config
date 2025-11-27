@@ -210,12 +210,12 @@ return {
 		},
 		keys = {
 			{
-				"<leader>si",
+				"<leader>li",
 				"<cmd>Telescope hierarchy incoming_calls<cr>",
 				desc = "LSP: [S]earch [I]ncoming Calls",
 			},
 			{
-				"<leader>so",
+				"<leader>lo",
 				"<cmd>Telescope hierarchy outgoing_calls<cr>",
 				desc = "LSP: [S]earch [O]utgoing Calls",
 			},

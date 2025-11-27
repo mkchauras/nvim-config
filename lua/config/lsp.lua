@@ -19,7 +19,7 @@ local server_opts = {
 			"--background-index",
 			"--background-index-priority=normal",
 		},
-		filetypes = {"c", "cpp", "objc", "objcpp"},
+		filetypes = {"c", "cpp", "objc", "objcpp", "asm"},
 	},
 
 	["lua_ls"] = {

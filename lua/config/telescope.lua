@@ -79,7 +79,7 @@ telescope.setup({
       preview_cutoff = 5,
       scroll_speed = 1,
     },
-    file_ignore_patterns = { ".cache/", "%.o", "%.so", "%.a", "%.ko", "%.tar.gz" "vmlinux" },
+    file_ignore_patterns = { ".cache/", "%.o", "%.so", "%.a", "%.ko", "%.tar.gz", "vmlinux" },
     mappings = {
       i = {
         ["<esc>"] = require('telescope.actions').close,

@@ -29,6 +29,7 @@ wk.add({
     { "<leader>gb", "<cmd>Telescope git_branches<cr>", desc = "Checkout branch" },
     { "<leader>gc", "<cmd>Telescope git_commits<cr>", desc = "Checkout commit" },
     { "<leader>gg", "<cmd>Telescope git_status<cr>", desc = "Open changed file" },
+    { "<leader>gt", "<cmd>Git blame<cr>", desc = "Traverse Blame" },
 
     { "<leader>l", group = "LSP" },
     { "<leader>lA", "<cmd>lua vim.lsp.buf.add_workspace_folder()<cr>", desc = "Add Workspace Folder" },

@@ -5,6 +5,7 @@ local nproc = vim.fn.systemlist("nproc")[1]
 local ensure_installed_servers = {
 	"clangd",
 	"lua_ls",
+	"pylsp",
 }
 
 local server_opts = {

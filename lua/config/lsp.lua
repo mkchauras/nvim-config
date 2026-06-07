@@ -5,6 +5,7 @@ local nproc = vim.fn.systemlist("nproc")[1]
 local ensure_installed_servers = {
 	"clangd",
 	"lua_ls",
+	"rust_analyzer",
 	"pylsp",
 }
 
@@ -50,6 +51,70 @@ local server_opts = {
 	["pylsp"] = {
 		cmd = { "pylsp" },
 		filetypes = { "python" }
+	},
+
+	["rust_analyzer"] = {
+		settings = {
+			["rust-analyzer"] = {
+				cargo = {
+					allFeatures = true,
+					loadOutDirsFromCheck = true,
+					buildScripts = {
+						enable = true,
+					},
+				},
+				checkOnSave = {
+					enable = true,
+					command = "clippy",
+					extraArgs = { "--no-deps" },
+				},
+				procMacro = {
+					enable = true,
+					ignored = {
+						["async-trait"] = { "async_trait" },
+						["napi-derive"] = { "napi" },
+						["async-recursion"] = { "async_recursion" },
+					},
+				},
+				diagnostics = {
+					enable = true,
+					disabled = {},
+					enableExperimental = true,
+				},
+				inlayHints = {
+					bindingModeHints = {
+						enable = false,
+					},
+					chainingHints = {
+						enable = true,
+					},
+					closingBraceHints = {
+						enable = true,
+						minLines = 25,
+					},
+					closureReturnTypeHints = {
+						enable = "never",
+					},
+					lifetimeElisionHints = {
+						enable = "never",
+						useParameterNames = false,
+					},
+					maxLength = 25,
+					parameterHints = {
+						enable = true,
+					},
+					reborrowHints = {
+						enable = "never",
+					},
+					renderColons = true,
+					typeHints = {
+						enable = true,
+						hideClosureInitialization = false,
+						hideNamedConstructor = false,
+					},
+				},
+			},
+		},
 	},
 
 }

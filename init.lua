@@ -14,6 +14,9 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- Set termguicolors before loading plugins
+vim.opt.termguicolors = true
+
 require('lazy').setup("plugins")
 
 -- Vim mappings, see lua/config/which.lua for more mappings

@@ -190,6 +190,9 @@ vim.keymap.set('n', '<C-E>', function()
 	vim.diagnostic.open_float(nil, { focus = false })
 end, { desc = 'Toggle Diagnostics' })
 
-vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
-	vim.lsp.handlers.hover, { border = "rounded" }
-)
+vim.lsp.handlers["textDocument/hover"] = function(...)
+	local buf, method, result, client_id, bufnr, config = ...
+	config = config or {}
+	config.border = "rounded"
+	return vim.lsp.handlers.hover(...)
+end

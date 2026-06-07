@@ -14,5 +14,17 @@ opt.splitkeep = "screen"
 
 -- Tab settings
 opt.tabstop = 8
+opt.softtabstop = 8
 opt.shiftwidth = 8
 opt.expandtab = false
+
+-- Show whitespace characters
+opt.list = true
+opt.listchars = {
+	tab = '→ ',
+	space = '·',
+	trail = '·',
+	extends = '⟩',
+	precedes = '⟨',
+	nbsp = '␣',
+}

@@ -64,7 +64,18 @@ vim.api.nvim_create_autocmd("BufReadPost", {
       pcall(vim.api.nvim_win_set_cursor, 0, mark)
     end
   end,
-})
+ })
+ 
+ -- Ensure tab settings are applied after plugins load
+ vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
+  group = augroup("tab_settings"),
+  callback = function()
+  	vim.opt_local.tabstop = 8
+  	vim.opt_local.softtabstop = 8
+  	vim.opt_local.shiftwidth = 8
+  	vim.opt_local.expandtab = false
+  end,
+ })
 
 vim.api.nvim_create_autocmd({"ColorScheme","BufReadPost"}, {
 	pattern = { "*patch.diff" },

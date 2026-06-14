@@ -43,7 +43,7 @@ wk.add({
     { "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<cr>", desc = "Code Action" },
     { "<leader>ld", "<cmd>lua vim.lsp.buf.definition()<cr>", desc = "Go To Definition" },
     { "<leader>le", "<cmd>Telescope diagnostics bufnr=0<cr>", desc = "Document Diagnostics" },
-    { "<leader>lf", "<cmd>lua vim.lsp.buf.formatting()<cr>", desc = "Format" },
+    { "<leader>lf", "<cmd>lua vim.lsp.buf.format()<cr>", desc = "Format" },
     { "<leader>lg", "<cmd>LspInfo<cr>", desc = "Connected Language Servers" },
     { "<leader>lk", "<cmd>lua vim.lsp.buf.signature_help()<cr>", desc = "Signature Help" },
     { "<leader>ll", "<cmd>lua vim.diagnostic.open_float()<CR>", desc = "Line diagnostics" },
